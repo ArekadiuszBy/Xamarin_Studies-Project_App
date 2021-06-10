@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinTestApp.Views.GpuPage"
+             Title="Jakis tam tekst o Xamarinie">
+
+	<ContentPage.Content>
+		<StackLayout>
+			<Label/>
+			<Label/>
+			<Label 
+                x:Name="WelcomeTitle"
+                FontSize="Title"
+                Text="To jest apka w Xamarinie"
+                TextColor="#9F9F00"
+                HorizontalOptions="CenterAndExpand"
+                />
+			<Label 
+                x:Name="WelcomeDescription0"
+                FontSize="Small"
+                Text="Xamarin to platforma Open Source służąca do tworzenia nowoczesnych i wydajnych aplikacji dla systemów iOS, Android i Windows przy użyciu platformy .NET. Xamarin jest warstwą abstrakcji"
+                TextColor="#9F9F00"
+                BackgroundColor="Black"
+                HorizontalOptions="Center"
+                />
+			<Label 
+                x:Name="WelcomeDescription1"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Text="aplikacje Xamarin mogą być zapisywane na komputerach PC lub Mac i kompilować do natywnych pakietów aplikacji, takich jak plik . apk w systemie Android lub plik . IPA w systemie iOS."
+                TextColor="#9F9F00"
+                BackgroundColor="Black"
+                HorizontalOptions="Center"
+                />
+			<Label/>
+			<Label 
+                x:Name="WelcomeDescription2"
+                FontSize="Medium"
+                Text="Dla kogo jest przeznaczony program Xamarin"
+                TextColor="#9F9F00"
+                BackgroundColor="Black"
+                HorizontalOptions="Center"
+                />
+			<Label 
+                x:Name="WelcomeDescription3"
+                FontSize="Small"
+                Text="Dla nikogo"
+                TextColor="#9F9F00"
+                BackgroundColor="Black"
+                HorizontalOptions="Center"
+                />
+			<Label/>
+			<Label/>
+			<Label/>
+			<Label/>
+			<Label 
+                x:Name="WelcomeDescription4"
+                FontSize="Medium"
+                Text="Proszę naciśnij dany przycisk, by wybrać ocenę."
+                TextColor="#9F9F00"
+                BackgroundColor="Black"
+                HorizontalOptions="Center"
+                VerticalOptions="StartAndExpand"
+                />
+			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition />
+					<ColumnDefinition />
+				</Grid.ColumnDefinitions>
+
+				<Button 
+                    FontAttributes="Italic"
+                    BorderColor="#090909"
+                    BackgroundColor="Red"
+                    BorderWidth="2"
+                    TextColor="#Black"
+                    FontSize="21"
+                    Grid.Column="0"
+                    Text="4.0"
+                    x:Name="LT30Nap"/>
+
+				<Button
+                    FontAttributes="Italic"
+                    BorderColor="#090909"
+                    BackgroundColor="Orange"
+                    BorderWidth="2"
+                    TextColor="#Red"
+                    FontSize="21"
+                    Grid.Column="1"
+                    Text="4.5"
+                    x:Name="Nap90"/>
+
+				<Button
+                    FontAttributes="Italic"
+                    BorderColor="Aqua"
+                    BackgroundColor="GreenYellow"
+                    BorderWidth="5"
+                    TextColor="#FFFFFF"
+                    FontSize="19"
+                    FontFamily="Arial"
+                    Grid.Column="2"
+                    Text="5.0"
+                    x:Name="CustomNap"/>
+
+			</Grid>
+		</StackLayout>
+	</ContentPage.Content>
+
+</ContentPage>
